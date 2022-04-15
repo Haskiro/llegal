@@ -1,0 +1,24 @@
+{
+  "name": "llegal",
+  "version": "1.0.0",
+  "description": "Llagel layout. Scss practice. Rwd and print version will be added later",
+  "main": "index.html",
+  "scripts": {
+    "install": "npm install lite-server --save-dev",
+    "start": "npm run lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/mospolytech_fit/211-321/kondartev-pavel/llegal.git"
+  },
+  "author": "Pavel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/mospolytech_fit/211-321/kondartev-pavel/llegal/issues"
+  },
+  "homepage": "https://gitlab.com/mospolytech_fit/211-321/kondartev-pavel/llegal#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
