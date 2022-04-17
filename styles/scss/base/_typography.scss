@@ -1,0 +1,13 @@
+@use "../utils/mixins";
+@use "../utils/functions";
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@700;900&family=Montserrat:wght@500&family=Open+Sans:wght@400;600;700&display=swap');
+
+html {
+    font: {
+        size: 14px;
+        family: 'Open Sans', sans-serif;
+        style: normal;
+        weight: 400;
+    }
+    line-height: 1.4rem;
+}

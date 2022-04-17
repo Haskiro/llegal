@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@700;900&family=Montserrat:wght@500&family=Open+Sans:wght@400;600;700&display=swap");
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -45,4 +46,12 @@ table {
 input {
   -webkit-appearance: none;
   border-radius: 0;
+}
+
+html {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4rem;
 }/*# sourceMappingURL=styles.css.map */

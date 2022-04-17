@@ -1,0 +1,51 @@
+@use "../utils/functions";
+
+@mixin  text-styles($size, $font: 'Open Sans', $family: sans-serif, $weight, $lineHeight, $letterSpacing: 0.2px){
+    font: {
+        size: $size;
+        family: $font, $family;
+        weight: $weight;
+    }
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+}
+
+@mixin h1 {
+    @include text-styles($size: round(58/14*10)*10rem, $font: 'Martel', $family: serif, $weight: 900, $lineHeight: round(65/14*10)*10rem);
+}
+
+@mixin h2 {
+    @include text-styles($size: round(40/14*10)*10rem, $font: 'Martel', $family: serif, $weight: 700, $lineHeight: round(50/14*10)*10rem);
+}
+
+@mixin h3 {
+    @include text-styles($size: round(24/14*10)*10rem, $font: 'Martel', $family: serif, $weight: 700, $lineHeight: round(32/14*10)*10rem, $letterSpacing: 0.1px);
+}
+
+@mixin h4 {
+    @include text-styles($size: round(20/14*10)*10rem, $font: 'Montserrat', $weight: 500, $lineHeight: round(30/14*10)*10rem);
+}
+
+@mixin h5 {
+    @include text-styles($size: round(16/14*10)*10rem, $font: 'Martel', $family: serif, $weight: 700, $lineHeight: round(24/14*10)*10rem, $letterSpacing: 0.1px);
+}
+
+@mixin h6 {
+    @include text-styles($size: 1em, $weight: 700, $lineHeight: round(24/14*10)*10rem);
+}
+
+@mixin btn-text {
+    @include text-styles($size: 1em, $weight: 700, $lineHeight: round(28/14*10)*10rem);
+}
+
+@mixin mobile-menu {
+    @include text-styles($size: round(30/14*10)*10rem, $weight: 400, $lineHeight: round(45/14*10)*10rem);
+}
+
+@mixin paragraph {
+    @include text-styles($size: 1rem, $weight: 400, $lineHeight: round(20/14*10)*10rem);
+}
+
+@mixin link {
+    @include text-styles($size: 1rem, $weight: 600, $lineHeight: round(24/14*10)*10rem);
+}
