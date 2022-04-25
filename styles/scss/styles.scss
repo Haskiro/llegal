@@ -6,6 +6,7 @@
 @use "layout/features";
 @use "layout/about-us";
 @use "layout/reviews";
+@use "layout/our-team";
 @use "layout/footer";
 @use "layout/forms";
 
@@ -13,3 +14,4 @@
 @use "components/burger";
 @use "components/card-features";
 @use "components/card-reviews";
+@use "components/card-team";

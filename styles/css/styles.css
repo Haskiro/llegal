@@ -56,7 +56,7 @@ html {
   line-height: 1.4rem;
 }
 
-.text-centered, .reviews__title, .reviews__subtitle, .about-us__title, .about-us__subtitle, .features__title, .features__subtitle, .introduction__title, .introduction__text, .introduction__btn {
+.text-centered, .card-team__name, .card-team__position, .our-team__title, .our-team__subtitle, .reviews__title, .reviews__subtitle, .about-us__title, .about-us__subtitle, .features__title, .features__subtitle, .introduction__title, .introduction__text, .introduction__btn {
   text-align: center;
 }
 
@@ -275,6 +275,33 @@ html {
   grid-template-columns: 1fr;
   row-gap: 30px;
 }
+.our-team {
+  padding: 75px 0px 138px;
+}
+.our-team__title {
+  font-size: 2.9rem;
+  font-family: "Martel", serif;
+  font-weight: 700;
+  line-height: 3.6rem;
+  letter-spacing: 0.2px;
+  color: #252B42;
+  margin-bottom: 10px;
+}
+.our-team__subtitle {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.4rem;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin-bottom: 45px;
+}
+.our-team__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+}
+
 .card-features {
   border: 1px solid #E8E8E8;
   padding: 35px 62px 35px 39px;
@@ -348,4 +375,54 @@ html {
   line-height: 1.7rem;
   letter-spacing: 0.2px;
   color: #252B42;
+}
+
+.card-team {
+  background: white;
+  border: 1px solid #E8E8E8;
+}
+.card-team__photo {
+  width: 100%;
+  height: 231px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 30px;
+}
+.card-team__name {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  font-family: "Martel", serif;
+  font-weight: 700;
+  line-height: 1.7rem;
+  letter-spacing: 0.1px;
+  color: #252B42;
+}
+.card-team__position {
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  line-height: 1.7rem;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin-bottom: 10px;
+}
+.card-team__socials {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.socials-team__list {
+  display: flex;
+}
+.socials-team__item {
+  margin-right: 10px;
+}
+.socials-team__item:nth-last-child(-n+1) {
+  margin-right: 0px;
+}
+.socials-team__icon {
+  width: 24px;
+  height: 24px;
 }/*# sourceMappingURL=styles.css.map */

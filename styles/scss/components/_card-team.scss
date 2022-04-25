@@ -1,0 +1,49 @@
+@use "../utils/mixins";
+@use "../utils/colors";
+@use "../utils/extends";
+
+.card-team {
+    background: white;
+    border: 1px solid colors.$card-border-color;
+    &__photo {
+        width: 100%;
+        height: 231px;
+        object-fit: cover;
+        margin-bottom: 30px;
+    }
+    &__name {
+        @extend .text-centered;
+        margin-bottom: 5px;
+        @include mixins.h5;
+        color: colors.$text-color;
+    }
+    &__position {
+        @extend .text-centered;
+        @include mixins.h6;
+        color: colors.$second-text-color;
+        margin-bottom: 10px;
+    }
+    &__socials {
+        margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+.socials-team {
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin-right: 10px;
+        &:nth-last-child(-n + 1) {
+            margin-right: 0px;
+        }
+    }
+    &__link {
+    }
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+}

@@ -1,0 +1,27 @@
+@use "../utils/mixins";
+@use "../utils/colors";
+@use "../utils/extends";
+
+.our-team {
+    padding: 75px 0px 138px;
+    &__title {
+        @include mixins.h2;
+        @extend .text-centered;
+        color: colors.$text-color;
+        margin-bottom: 10px;
+    }
+    &__card {
+    }
+    &__subtitle {
+        @include mixins.paragraph;
+        @extend .text-centered;
+        color: colors.$second-text-color;
+        margin-bottom: 45px;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+}
+

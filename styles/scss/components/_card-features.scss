@@ -3,7 +3,7 @@
 @use "../utils/extends";
 
 .card-features {
-    border: 1px solid #E8E8E8;
+    border: 1px solid colors.$card-border-color;
     padding: 35px 62px 35px 39px;
     &__row {
         display: flex;
