@@ -2,7 +2,14 @@
 @use "base/typography";
 
 @use "layout/header";
+@use "layout/main";
+@use "layout/features";
+@use "layout/about-us";
+@use "layout/reviews";
 @use "layout/footer";
 @use "layout/forms";
 
 @use "components/buttons";
+@use "components/burger";
+@use "components/card-features";
+@use "components/card-reviews";

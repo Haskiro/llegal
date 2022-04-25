@@ -1,0 +1,87 @@
+@use "../utils/colors";
+@use "../utils/mixins";
+@use "../utils/extends";
+
+.header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: colors.$light-bg-color;
+    z-index: 10;
+    position: relative;
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 74px;
+        z-index: 10;
+        
+    }
+    &__content {
+
+    }
+    &__nav {
+        position: absolute;
+        transition: 0.3s linear;
+        left: 0;
+        top: -532px;
+        &.active {
+            top: 0;;
+        }
+    }
+    &__icons-list {
+        z-index: 100;
+    }
+}
+.container {
+    max-width: 480px;
+    min-width: 320px;
+    padding: 0px 35px;
+    margin: 0px auto;
+
+}
+.nav {
+    padding: 104px 0px 100px;
+    width: 100vw;
+    background-color: colors.$light-bg-color;
+    z-index: 9;
+    height: 532px;
+    &__list {
+        max-width: 120px;
+        margin: 60px auto 0px;
+    }
+    &__item {
+        text-align: center;
+        margin-bottom: 30px;
+        &:nth-last-child(-n + 1) {
+            margin-bottom: 0px;
+        }
+    }
+    &__link {
+        color: colors.$second-text-color;
+        text-decoration: none;
+        @include mixins.mobile-menu;
+    }
+}
+.icons-list {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    &__item {
+        margin-right: 24px;
+        &:nth-last-child(-n + 1) {
+            margin-right: 0px;
+        }
+    }
+}
+.icon-list {
+    &__link {
+    }
+    &__icon {
+    }
+    &__burger {
+    }
+}
+.burger {
+}

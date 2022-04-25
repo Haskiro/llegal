@@ -1,0 +1,28 @@
+@use "../utils/mixins";
+@use "../utils/colors";
+@use "../utils/extends";
+
+.reviews {
+    background: colors.$light-bg-color-2;
+    padding: 75px 0px 108px;
+    &__title {
+        @include mixins.h2;
+        @extend .text-centered;
+        color: colors.$text-color;
+        margin-bottom: 10px
+    }
+    &__subtitle {
+        @include mixins.paragraph;
+        @extend .text-centered;
+        color: colors.$second-text-color;
+        margin-bottom: 60px;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+    &__card {
+    }
+}
+
