@@ -18,6 +18,9 @@
         
     }
     &__content {
+        @media (min-width: 768px) {
+            display: flex;
+        }
 
     }
     &__nav {
@@ -25,6 +28,11 @@
         transition: 0.3s linear;
         left: 0;
         top: -532px;
+        @media (min-width: 768px) {
+            position: relative;
+            top: auto;
+            left: auto;
+        }
         &.active {
             top: 0;;
         }
@@ -33,34 +41,48 @@
         z-index: 100;
     }
 }
-.container {
-    max-width: 480px;
-    min-width: 320px;
-    padding: 0px 35px;
-    margin: 0px auto;
 
-}
 .nav {
     padding: 104px 0px 100px;
     width: 100vw;
     background-color: colors.$light-bg-color;
     z-index: 9;
     height: 532px;
+    @media (min-width: 768px) {
+        background: none;
+        height: auto;
+        width: auto;
+        padding: 0px;
+    }
     &__list {
         max-width: 120px;
         margin: 60px auto 0px;
+        @media (min-width: 768px) {
+            margin: 0px;
+            max-width: none;
+            display: flex;
+        }
     }
     &__item {
         text-align: center;
         margin-bottom: 30px;
         &:nth-last-child(-n + 1) {
             margin-bottom: 0px;
+            @media (min-width: 768px) {
+                margin-right: 42px;
+            }
+        }
+        @media (min-width: 768px) {
+            margin: 0px 30px 0px 0px;
         }
     }
     &__link {
         color: colors.$second-text-color;
         text-decoration: none;
         @include mixins.mobile-menu;
+        @media (min-width: 768px) {
+            @include mixins.link;
+        }
     }
 }
 .icons-list {
@@ -79,9 +101,18 @@
     &__link {
     }
     &__icon {
+        width: 24px;
+        height: 24px;
+        @media (min-width: 768px) {
+            width: 20px;
+            height: 20px;
+        }
     }
     &__burger {
     }
 }
 .burger {
+    @media (min-width: 768px) {
+        display: none;
+    }
 }

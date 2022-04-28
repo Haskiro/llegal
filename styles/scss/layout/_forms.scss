@@ -1,0 +1,85 @@
+@use "../utils/mixins";
+@use "../utils/colors";
+@use "../utils/extends";
+
+.form {
+    display: grid;
+    row-gap: 20px;
+    max-width: 596px;
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    &__input {
+        border: 1px solid colors.$muted-color;
+        border-radius: 5px;
+        background: colors.$form-input-color;
+        height: 50px;
+        padding: 0px 22px;
+        &::placeholder {
+            @include mixins.h6;
+            color: colors.$muted-color;
+        }
+        @media (min-width: 768px) {
+            grid-column: span 1;
+        }
+    }
+    &__select {
+        width: 100%;
+        border: 1px solid colors.$muted-color;
+        border-radius: 5px;
+        background: colors.$form-input-color;
+        height: 50px;
+        @include mixins.h6;
+        color: colors.$muted-color;
+        padding: 0px 20px;
+        appearance: none;
+        @media (min-width: 768px) {
+            grid-column: span 1;
+        }
+    }
+    &__select-block {
+        position: relative;
+        width: 100%;
+        &::after {
+            content: url("/images/contact/caret.svg");
+            position: absolute;
+            right: 20px;
+            top: 18px;
+            width: 14px;
+            height: 8px;
+            z-index: 1;
+        }
+
+    }
+    &__textarea {
+        border: 1px solid colors.$muted-color;
+        border-radius: 5px;
+        background: colors.$form-input-color;
+        resize: none;
+        padding: 25px;
+        height: 140px;
+        &::placeholder {
+            @include mixins.h6;
+            color: colors.$muted-color;
+            line-height: normal;
+        }
+        @media (min-width: 768px) {
+            grid-column: span 2;
+        }
+    }
+    &__button {
+        margin-top: 40px;
+        @extend .text-centered;
+        @include mixins.btn-text;
+        text-decoration: none;
+        color: colors.$light-text-color;
+        background-color: colors.$secondary-color-3;
+        padding: 15px 35px;
+        border-radius: 5px;
+        display: block;
+        border: 1px solid colors.$secondary-color-3;
+        max-width: 215px;
+
+    }
+}

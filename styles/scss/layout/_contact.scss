@@ -1,0 +1,64 @@
+@use "../utils/mixins";
+@use "../utils/colors";
+@use "../utils/extends";
+
+.contact {
+    &__request {
+        padding: 115px 0px 106px;
+    }
+    &__consulting {
+        padding: 40px 0px;
+    }
+}
+.request {
+    background-image: url("../../../images/contact/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__subtitle {
+        @include mixins.h5;
+        color: colors.$text-color;
+    }
+    &__title {
+        @include mixins.h2;
+        color: colors.$text-color;
+        margin-bottom: 40px;
+    }
+    &__form {
+        display: grid;
+    }
+}
+.consulting {
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content {
+    }
+    &__title {
+        @include mixins.h3;
+        color: colors.$text-color;
+        margin-bottom: 10px;
+        padding: 0px 20px;
+    }
+    &__text {
+        @include mixins.paragraph;
+        color: colors.$text-color;
+        margin-bottom: 50px;
+        padding: 0px 20px;
+    }
+    &__link {
+        @extend .text-centered;
+        @include mixins.btn-text;
+        text-decoration: none;
+        color: colors.$light-text-color;
+        background-color: colors.$secondary-color-3;
+        padding: 15px 35px;
+        border-radius: 5px;
+        display: block;
+        height: 58px;
+        align-self: center;
+        border: 1px solid colors.$secondary-color-3;
+
+    }
+}

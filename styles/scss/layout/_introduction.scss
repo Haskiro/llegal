@@ -5,22 +5,35 @@
 .introduction {
     padding: 80px 0px;
     background-color: colors.$light-bg-color-2;
+    @media (min-width: 768px) {
+        padding: 120px 91px;
+    }
     &__title {
         @include mixins.h2;
         @extend .text-centered;
         box-sizing: border-box;
-        margin-bottom: 40px;
+        max-width: 754px;
+        margin: 0px auto 40px;
         color: colors.$text-color;
+        @media (min-width: 768px) {
+            @include mixins.h1;
+        }
     }
     &__text {
         @include mixins.h4;
         color: colors.$second-text-color;
         @extend .text-centered;
-        margin-bottom: 40px;
+        max-width: 539px;
+        margin: 0px auto 40px;
     }
     &__btns {
         max-width: 182px;
         margin: 0px auto;
+        @media (min-width: 768px) {
+            display: flex;
+            width: 347px;
+            max-width: none;
+        }
     }
     &__btn {
         margin: 0px auto 25px;

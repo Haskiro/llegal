@@ -11,18 +11,37 @@
         color: colors.$text-color;
         margin-bottom: 10px
     }
-    &__subtitle {
+    &__text {
         @include mixins.paragraph;
         @extend .text-centered;
         color: colors.$second-text-color;
-        margin-bottom: 60px;
+        max-width: 431px;
+        margin: 0px auto 60px;
+        @media (min-width: 768px) {
+            margin: 0px auto 80px;
+        }
     }
     &__content {
         display: grid;
         grid-template-columns: 1fr;
         row-gap: 30px;
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            grid-template-columns: repeat(9, 1fr);
+            gap: 30px;
+        }
+        @media (min-width: 1024px) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
     }
     &__card {
+        @media (min-width: 768px) {
+            flex-basis: 47%;
+        }
     }
 }
 
