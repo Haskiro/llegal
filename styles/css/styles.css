@@ -339,13 +339,18 @@ html {
 .about-us__video {
   width: auto;
   height: 442px;
-  background-image: url("../../../images/about-us/image.jpg");
+  background-image: url("../../../images/about-us/image-md.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (min-width: 768px) {
+  .about-us__video {
+    background-image: url("../../../images/about-us/image-lg.jpg");
+  }
 }
 .about-us__pause-icon {
   display: block;
@@ -799,10 +804,20 @@ html {
 }
 
 .request {
-  background-image: url("../../../images/contact/background.jpg");
+  background-image: url("../../../images/contact/background-sm.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .request {
+    background-image: url("../../../images/contact/background-md.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .request {
+    background-image: url("../../../images/contact/background-lg.jpg");
+  }
 }
 .request__subtitle {
   font-size: 1.1rem;

@@ -22,13 +22,16 @@
     &__video {
         width: auto;
         height: 442px;
-        background-image: url("../../../images/about-us/image.jpg");
+        background-image: url("../../../images/about-us/image-md.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         display: flex;
         align-items: center;
         justify-content: center;
+        @media (min-width: 768px) {
+            background-image: url("../../../images/about-us/image-lg.jpg");
+        }
 
     }
     &__pause-icon {

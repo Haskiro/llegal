@@ -11,10 +11,16 @@
     }
 }
 .request {
-    background-image: url("../../../images/contact/background.jpg");
+    background-image: url("../../../images/contact/background-sm.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    @media (min-width: 768px) {
+        background-image: url("../../../images/contact/background-md.jpg");
+    }
+    @media (min-width: 1024px) {
+        background-image: url("../../../images/contact/background-lg.jpg");
+    }
     &__subtitle {
         @include mixins.h5;
         color: colors.$text-color;
