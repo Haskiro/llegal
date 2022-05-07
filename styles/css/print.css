@@ -1,0 +1,42 @@
+@media print {
+  *,
+*:before,
+*:after,
+*:first-letter,
+p:first-line,
+div:first-line,
+blockquote:first-line,
+li:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a[href^=http]:not([href*="mywebsite.com"]):after {
+    content: " (" attr(href) ")";
+  }
+
+  @page {
+    size: A4;
+    margin: 1cm;
+  }
+  html {
+    font-size: 10pt;
+  }
+
+  .header__content,
+.footer__socials,
+.footer__site-map,
+.footer__feedback {
+    display: none;
+  }
+
+  .introduciton__text, .features__title, .about-us__title, .our-team__title {
+    page-break-after: avoid;
+  }
+
+  .card-features, .about-us__video, .card-reviews, .card-team, .form, .contact__request {
+    page-break-inside: avoid;
+  }
+}/*# sourceMappingURL=print.css.map */

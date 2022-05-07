@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/css/styles.css">
+    <link rel="stylesheet" href="styles/css/print.css" media="print">
     <title>Llegal</title>
 </head>
 <body>
@@ -155,6 +156,10 @@
                     physics: Newtonian mechanics 
                 </p>
                 <div class="about-us__video">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/about-us/image-lg.jpg">
+                        <img src="images/about-us/image-md.jpg" alt="video" class="about-us__image">
+                    </picture>
                     <img src="images/about-us/pause-btn.svg" alt="" class="about-us__pause-icon">
                 </div>
             </div>
