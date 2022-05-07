@@ -46,6 +46,10 @@ a:visited {
     page-break-inside: avoid;
   }
 
+  .header {
+    padding: 0 0 5mm 0;
+  }
+
   .introduction {
     display: flex;
     flex-direction: column;
@@ -98,9 +102,13 @@ a:visited {
   .features__text {
     margin: 0 auto 5mm;
   }
+  .features__content {
+    row-gap: 4mm;
+  }
 }
 @media print {
   .about-us {
+    page-break-before: always;
     padding: 2cm 0 0;
   }
   .about-us__text {
@@ -109,10 +117,14 @@ a:visited {
 }
 @media print {
   .reviews {
+    page-break-before: always;
     padding: 2cm 0 0;
   }
   .reviews__text {
     margin: 0 auto 5mm;
+  }
+  .reviews__content {
+    row-gap: 4mm;
   }
 }
 @media print {

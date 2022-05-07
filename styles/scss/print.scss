@@ -41,6 +41,9 @@
     .card-features, .about-us__video, .card-reviews, .card-team {
         page-break-inside: avoid;
     }
+    .header {
+        padding: 0 0 5mm 0;
+    }
     .introduction {
         display: flex;
         flex-direction: column;
@@ -76,17 +79,25 @@
         &__text {
             margin: 0 auto 5mm;
         }
+        &__content {
+            row-gap: 4mm;
+        }
     }
     .about-us {
+        page-break-before: always;
         padding: 2cm 0 0;
         &__text {
             margin: 0 auto 5mm;
         }
     }
     .reviews {
+        page-break-before: always;
         padding: 2cm 0 0;
         &__text {
             margin: 0 auto 5mm;
+        }
+        &__content {
+            row-gap: 4mm;
         }
     }
     .our-team {
