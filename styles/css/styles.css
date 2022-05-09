@@ -807,7 +807,12 @@ html {
   border-radius: 5px;
   display: block;
   border: 1px solid #DBB468;
-  max-width: 215px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .form__button {
+    max-width: 215px;
+  }
 }
 
 .contact__request {
