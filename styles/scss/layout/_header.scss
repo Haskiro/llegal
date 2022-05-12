@@ -12,6 +12,15 @@
         display: flex;
         justify-content: space-between;
     }
+    &__skip-link {
+        position: absolute;
+        top: -100%;
+        &:focus {
+            top: 80px;
+        }
+    }
+    &__link {
+    }
     &__logo {
         width: 74px;
         z-index: 10;
