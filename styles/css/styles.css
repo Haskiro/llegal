@@ -92,11 +92,6 @@ html {
     display: flex;
   }
 }
-@media print {
-  .header__content {
-    display: none;
-  }
-}
 .header__nav {
   position: absolute;
   transition: 0.3s linear;
@@ -191,13 +186,12 @@ html {
 .icons-list__item:nth-last-child(-n+1) {
   margin-right: 0px;
 }
-
-.icon-list__icon {
+.icons-list__icon {
   width: 24px;
   height: 24px;
 }
 @media (min-width: 768px) {
-  .icon-list__icon {
+  .icons-list__icon {
     width: 20px;
     height: 20px;
   }

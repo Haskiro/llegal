@@ -21,9 +21,6 @@
         @media (min-width: 768px) {
             display: flex;
         }
-        @media print {
-            display: none;
-        }
 
     }
     &__nav {
@@ -88,6 +85,7 @@
         }
     }
 }
+
 .icons-list {
     position: relative;
     z-index: 10;
@@ -99,8 +97,6 @@
             margin-right: 0px;
         }
     }
-}
-.icon-list {
     &__link {
     }
     &__icon {
