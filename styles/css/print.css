@@ -34,7 +34,8 @@ a:visited {
 .footer__socials,
 .footer__site-map,
 .footer__feedback,
-.contact__request {
+.contact__request,
+.about-us {
     display: none;
   }
 
