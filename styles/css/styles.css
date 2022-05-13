@@ -166,7 +166,7 @@ html {
   }
 }
 .nav__link {
-  color: #737373;
+  color: #2b2a2a;
   text-decoration: none;
   font-size: 2.1rem;
   font-family: "Open Sans", sans-serif;
@@ -251,7 +251,7 @@ html {
   font-weight: 500;
   line-height: 2.1rem;
   letter-spacing: 0.2px;
-  color: #737373;
+  color: #2b2a2a;
   max-width: 539px;
   margin: 0px auto 40px;
 }
@@ -276,16 +276,16 @@ html {
   letter-spacing: 0.2px;
   text-decoration: none;
   color: #FFFFFF;
-  background-color: #e9a622;
+  background-color: #e95022;
   padding: 10px 35px;
   border-radius: 35px;
   display: block;
-  border: 1px solid #e9a622;
+  border: 1px solid #e95022;
 }
 .introduction__btn_bg-color_none {
   width: 155px;
   background: none;
-  color: #e9a622;
+  color: #e95022;
 }
 
 .features {
@@ -306,7 +306,7 @@ html {
   font-weight: 400;
   line-height: 1.4rem;
   letter-spacing: 0.2px;
-  color: #737373;
+  color: #2b2a2a;
   max-width: 431px;
   margin: 0px auto 45px;
 }
@@ -345,7 +345,7 @@ html {
   font-weight: 400;
   line-height: 1.4rem;
   letter-spacing: 0.2px;
-  color: #737373;
+  color: #2b2a2a;
   max-width: 431px;
   margin: 0px auto 60px;
 }
@@ -399,7 +399,7 @@ html {
   font-weight: 400;
   line-height: 1.4rem;
   letter-spacing: 0.2px;
-  color: #737373;
+  color: #2b2a2a;
   max-width: 431px;
   margin: 0px auto 60px;
 }
@@ -458,7 +458,7 @@ html {
   font-weight: 400;
   line-height: 1.4rem;
   letter-spacing: 0.2px;
-  color: #737373;
+  color: #2b2a2a;
   max-width: 431px;
   margin: 0px auto 45px;
 }
@@ -568,7 +568,7 @@ html {
   font-weight: 600;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #cec2c2;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -599,9 +599,9 @@ html {
   border: none;
   height: 58px;
   border-radius: 5px;
-  background: linear-gradient(to right, white 90%, #e9a622 10%);
+  background: linear-gradient(to right, white 90%, #e95022 10%);
   border: 1px solid #E6E6E6;
-  outline-color: #e9a622;
+  outline-color: #e95022;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .feedback__input {
@@ -614,7 +614,7 @@ html {
   font-weight: 400;
   line-height: 2rem;
   letter-spacing: 0.2px;
-  color: #817e7e;
+  color: #000000;
 }
 .feedback__input:-ms-input-placeholder {
   font-size: 1rem;
@@ -622,7 +622,7 @@ html {
   font-weight: 400;
   line-height: 2rem;
   letter-spacing: 0.2px;
-  color: #817e7e;
+  color: #000000;
 }
 .feedback__input::placeholder {
   font-size: 1rem;
@@ -630,7 +630,7 @@ html {
   font-weight: 400;
   line-height: 2rem;
   letter-spacing: 0.2px;
-  color: #817e7e;
+  color: #000000;
 }
 .feedback__btn {
   font-size: 1rem;
@@ -640,11 +640,11 @@ html {
   letter-spacing: 0.2px;
   color: #FFFFFF;
   text-decoration: none;
-  background-color: #e9a622;
+  background-color: #e95022;
   padding: 13px 0px;
   display: block;
   width: 117px;
-  border: 1px solid #e9a622;
+  border: 1px solid #e95022;
   position: absolute;
   top: 1px;
   right: 5px;
@@ -660,7 +660,7 @@ html {
   font-weight: 400;
   line-height: 2rem;
   letter-spacing: 0.2px;
-  color: #817e7e;
+  color: #000000;
   margin-bottom: 70px;
 }
 
@@ -699,7 +699,7 @@ html {
   position: absolute;
 }
 .form__input {
-  border: 1px solid #817e7e;
+  border: 1px solid #000000;
   border-radius: 5px;
   background: #F9F9F9;
   height: 50px;
@@ -711,7 +711,7 @@ html {
   font-weight: 700;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #817e7e;
+  color: #000000;
 }
 .form__input:-ms-input-placeholder {
   font-size: 1em;
@@ -719,7 +719,7 @@ html {
   font-weight: 700;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #817e7e;
+  color: #000000;
 }
 .form__input::placeholder {
   font-size: 1em;
@@ -727,7 +727,7 @@ html {
   font-weight: 700;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #817e7e;
+  color: #000000;
 }
 @media (min-width: 768px) {
   .form__input {
@@ -736,7 +736,7 @@ html {
 }
 .form__select {
   width: 100%;
-  border: 1px solid #817e7e;
+  border: 1px solid #000000;
   border-radius: 5px;
   background: #F9F9F9;
   height: 50px;
@@ -745,7 +745,7 @@ html {
   font-weight: 700;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #817e7e;
+  color: #000000;
   padding: 0px 20px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -770,7 +770,7 @@ html {
   z-index: 1;
 }
 .form__textarea {
-  border: 1px solid #817e7e;
+  border: 1px solid #000000;
   border-radius: 5px;
   background: #F9F9F9;
   resize: none;
@@ -783,7 +783,7 @@ html {
   font-weight: 700;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #817e7e;
+  color: #000000;
   line-height: normal;
 }
 .form__textarea:-ms-input-placeholder {
@@ -792,7 +792,7 @@ html {
   font-weight: 700;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #817e7e;
+  color: #000000;
   line-height: normal;
 }
 .form__textarea::placeholder {
@@ -801,7 +801,7 @@ html {
   font-weight: 700;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #817e7e;
+  color: #000000;
   line-height: normal;
 }
 @media (min-width: 768px) {
@@ -818,11 +818,11 @@ html {
   letter-spacing: 0.2px;
   text-decoration: none;
   color: #FFFFFF;
-  background-color: #e9a622;
+  background-color: #e95022;
   padding: 15px 35px;
   border-radius: 5px;
   display: block;
-  border: 1px solid #e9a622;
+  border: 1px solid #e95022;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -909,13 +909,13 @@ html {
   letter-spacing: 0.2px;
   text-decoration: none;
   color: #FFFFFF;
-  background-color: #e9a622;
+  background-color: #e95022;
   padding: 15px 35px;
   border-radius: 5px;
   display: block;
   height: 58px;
   align-self: center;
-  border: 1px solid #e9a622;
+  border: 1px solid #e95022;
 }
 
 .card-team {
@@ -944,7 +944,7 @@ html {
   font-weight: 700;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #737373;
+  color: #2b2a2a;
   margin-bottom: 10px;
 }
 .card-team__socials {
@@ -985,7 +985,7 @@ html {
   font-weight: 700;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #737373;
+  color: #2b2a2a;
   margin-bottom: 20px;
 }
 .author {
@@ -1002,7 +1002,7 @@ html {
   font-weight: 600;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #e9a622;
+  color: #e97222;
   text-decoration: none;
 }
 .author__position {
@@ -1037,7 +1037,7 @@ html {
   letter-spacing: 0.1px;
 }
 .card-features__text {
-  color: #737373;
+  color: #2b2a2a;
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
