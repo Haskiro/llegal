@@ -104,16 +104,19 @@ html {
   transition: 0.3s linear;
   left: 0;
   top: -532px;
+  visibility: hidden;
 }
 @media (min-width: 768px) {
   .header__nav {
     position: relative;
+    visibility: visible;
     top: auto;
     left: auto;
   }
 }
 .header__nav.active {
   top: 0;
+  visibility: visible;
 }
 .header__icons-list {
   z-index: 100;
@@ -203,6 +206,10 @@ html {
     height: 20px;
   }
 }
+.icons-list__button {
+  background: none;
+  border: none;
+}
 @media (min-width: 768px) {
   .burger {
     display: none;
@@ -269,16 +276,16 @@ html {
   letter-spacing: 0.2px;
   text-decoration: none;
   color: #FFFFFF;
-  background-color: #DBB468;
+  background-color: #e6b045;
   padding: 10px 35px;
   border-radius: 35px;
   display: block;
-  border: 1px solid #DBB468;
+  border: 1px solid #e6b045;
 }
 .introduction__btn_bg-color_none {
   width: 155px;
   background: none;
-  color: #DBB468;
+  color: #e6b045;
 }
 
 .features {
@@ -561,7 +568,7 @@ html {
   font-weight: 600;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #BDBDBD;
+  color: #979696;
   text-decoration: none;
 }
 
@@ -582,15 +589,19 @@ html {
 .feedback__form {
   position: relative;
 }
+.feedback__label {
+  opacity: 0;
+  position: absolute;
+}
 .feedback__input {
   padding: 0px 137px 0px 20px;
   width: 100%;
   border: none;
   height: 58px;
   border-radius: 5px;
-  background: linear-gradient(to right, white 90%, #DBB468 10%);
+  background: linear-gradient(to right, white 90%, #e6b045 10%);
   border: 1px solid #E6E6E6;
-  outline-color: #DBB468;
+  outline-color: #e6b045;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .feedback__input {
@@ -603,7 +614,7 @@ html {
   font-weight: 400;
   line-height: 2rem;
   letter-spacing: 0.2px;
-  color: #BDBDBD;
+  color: #979696;
 }
 .feedback__input:-ms-input-placeholder {
   font-size: 1rem;
@@ -611,7 +622,7 @@ html {
   font-weight: 400;
   line-height: 2rem;
   letter-spacing: 0.2px;
-  color: #BDBDBD;
+  color: #979696;
 }
 .feedback__input::placeholder {
   font-size: 1rem;
@@ -619,7 +630,7 @@ html {
   font-weight: 400;
   line-height: 2rem;
   letter-spacing: 0.2px;
-  color: #BDBDBD;
+  color: #979696;
 }
 .feedback__btn {
   font-size: 1rem;
@@ -629,11 +640,11 @@ html {
   letter-spacing: 0.2px;
   color: #FFFFFF;
   text-decoration: none;
-  background-color: #DBB468;
+  background-color: #e6b045;
   padding: 13px 0px;
   display: block;
   width: 117px;
-  border: 1px solid #DBB468;
+  border: 1px solid #e6b045;
   position: absolute;
   top: 1px;
   right: 5px;
@@ -649,7 +660,7 @@ html {
   font-weight: 400;
   line-height: 2rem;
   letter-spacing: 0.2px;
-  color: #BDBDBD;
+  color: #979696;
   margin-bottom: 70px;
 }
 
@@ -688,7 +699,7 @@ html {
   position: absolute;
 }
 .form__input {
-  border: 1px solid #BDBDBD;
+  border: 1px solid #979696;
   border-radius: 5px;
   background: #F9F9F9;
   height: 50px;
@@ -700,7 +711,7 @@ html {
   font-weight: 700;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #BDBDBD;
+  color: #979696;
 }
 .form__input:-ms-input-placeholder {
   font-size: 1em;
@@ -708,7 +719,7 @@ html {
   font-weight: 700;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #BDBDBD;
+  color: #979696;
 }
 .form__input::placeholder {
   font-size: 1em;
@@ -716,7 +727,7 @@ html {
   font-weight: 700;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #BDBDBD;
+  color: #979696;
 }
 @media (min-width: 768px) {
   .form__input {
@@ -725,7 +736,7 @@ html {
 }
 .form__select {
   width: 100%;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #979696;
   border-radius: 5px;
   background: #F9F9F9;
   height: 50px;
@@ -734,7 +745,7 @@ html {
   font-weight: 700;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #BDBDBD;
+  color: #979696;
   padding: 0px 20px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -759,7 +770,7 @@ html {
   z-index: 1;
 }
 .form__textarea {
-  border: 1px solid #BDBDBD;
+  border: 1px solid #979696;
   border-radius: 5px;
   background: #F9F9F9;
   resize: none;
@@ -772,7 +783,7 @@ html {
   font-weight: 700;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #BDBDBD;
+  color: #979696;
   line-height: normal;
 }
 .form__textarea:-ms-input-placeholder {
@@ -781,7 +792,7 @@ html {
   font-weight: 700;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #BDBDBD;
+  color: #979696;
   line-height: normal;
 }
 .form__textarea::placeholder {
@@ -790,7 +801,7 @@ html {
   font-weight: 700;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #BDBDBD;
+  color: #979696;
   line-height: normal;
 }
 @media (min-width: 768px) {
@@ -807,11 +818,11 @@ html {
   letter-spacing: 0.2px;
   text-decoration: none;
   color: #FFFFFF;
-  background-color: #DBB468;
+  background-color: #e6b045;
   padding: 15px 35px;
   border-radius: 5px;
   display: block;
-  border: 1px solid #DBB468;
+  border: 1px solid #e6b045;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -898,13 +909,13 @@ html {
   letter-spacing: 0.2px;
   text-decoration: none;
   color: #FFFFFF;
-  background-color: #DBB468;
+  background-color: #e6b045;
   padding: 15px 35px;
   border-radius: 5px;
   display: block;
   height: 58px;
   align-self: center;
-  border: 1px solid #DBB468;
+  border: 1px solid #e6b045;
 }
 
 .card-team {
@@ -991,7 +1002,7 @@ html {
   font-weight: 600;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #D0A144;
+  color: #dba12d;
   text-decoration: none;
 }
 .author__position {

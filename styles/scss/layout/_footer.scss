@@ -94,6 +94,10 @@
     &__form {
         position: relative;
     }
+    &__label {
+        opacity: 0;
+        position: absolute;
+    }
     &__input {
         padding: 0px 137px 0px 20px;
         width: 100%;

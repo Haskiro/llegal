@@ -37,13 +37,16 @@
         transition: 0.3s linear;
         left: 0;
         top: -532px;
+        visibility: hidden;
         @media (min-width: 768px) {
             position: relative;
+            visibility: visible;
             top: auto;
             left: auto;
         }
         &.active {
-            top: 0;;
+            top: 0;
+            visibility: visible;
         }
     }
     &__icons-list {
@@ -115,6 +118,10 @@
             width: 20px;
             height: 20px;
         }
+    }
+    &__button {
+        background: none;
+        border: none;
     }
     &__burger {
     }
