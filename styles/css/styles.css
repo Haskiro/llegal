@@ -211,6 +211,11 @@ html {
   border: none;
 }
 @media (min-width: 768px) {
+  .icons-list__button {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
   .burger {
     display: none;
   }
