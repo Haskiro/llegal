@@ -78,7 +78,7 @@
     }
     &__link {
         @include mixins.link;
-        color: colors.$muted-color;
+        color: colors.$footer-sitemap-color;
         text-decoration: none;
     }
 }
