@@ -276,16 +276,16 @@ html {
   letter-spacing: 0.2px;
   text-decoration: none;
   color: #FFFFFF;
-  background-color: #e95022;
+  background-color: #000000;
   padding: 10px 35px;
   border-radius: 35px;
   display: block;
-  border: 1px solid #e95022;
+  border: 1px solid #000000;
 }
 .introduction__btn_bg-color_none {
   width: 155px;
   background: none;
-  color: #e95022;
+  color: #000000;
 }
 
 .features {
@@ -599,9 +599,9 @@ html {
   border: none;
   height: 58px;
   border-radius: 5px;
-  background: linear-gradient(to right, white 90%, #e95022 10%);
+  background: linear-gradient(to right, white 90%, #000000 10%);
   border: 1px solid #E6E6E6;
-  outline-color: #e95022;
+  outline-color: #000000;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .feedback__input {
@@ -640,11 +640,11 @@ html {
   letter-spacing: 0.2px;
   color: #FFFFFF;
   text-decoration: none;
-  background-color: #e95022;
+  background-color: #000000;
   padding: 13px 0px;
   display: block;
   width: 117px;
-  border: 1px solid #e95022;
+  border: 1px solid #000000;
   position: absolute;
   top: 1px;
   right: 5px;
@@ -818,11 +818,11 @@ html {
   letter-spacing: 0.2px;
   text-decoration: none;
   color: #FFFFFF;
-  background-color: #e95022;
+  background-color: #000000;
   padding: 15px 35px;
   border-radius: 5px;
   display: block;
-  border: 1px solid #e95022;
+  border: 1px solid #000000;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -909,13 +909,13 @@ html {
   letter-spacing: 0.2px;
   text-decoration: none;
   color: #FFFFFF;
-  background-color: #e95022;
+  background-color: #000000;
   padding: 15px 35px;
   border-radius: 5px;
   display: block;
   height: 58px;
   align-self: center;
-  border: 1px solid #e95022;
+  border: 1px solid #000000;
 }
 
 .card-team {
@@ -1002,7 +1002,7 @@ html {
   font-weight: 600;
   line-height: 1.7rem;
   letter-spacing: 0.2px;
-  color: #e97222;
+  color: #000000;
   text-decoration: none;
 }
 .author__position {
