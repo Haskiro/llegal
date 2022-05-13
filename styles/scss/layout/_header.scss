@@ -92,7 +92,7 @@
         color: colors.$second-text-color;
         text-decoration: none;
         @include mixins.mobile-menu;
-        @media (min-width: 768px) {
+        @include mixins.respond-to(medium) {
             @include mixins.link;
         }
     }

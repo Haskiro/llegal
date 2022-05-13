@@ -49,3 +49,21 @@
 @mixin link {
     @include text-styles($size: 1rem, $weight: 600, $lineHeight: round(24/14*10)*0.1rem);
 }
+
+$breakpoints: (
+  medium: 768px,
+  large: 1024px,
+);
+
+@mixin respond-to($breakpoint) { 
+    @if map-has-key($breakpoints, $breakpoint) {
+      @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+        @content;
+      }
+    }
+   
+    @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+          + "Please make sure it is defined in `$breakpoints` map.";
+    }
+}

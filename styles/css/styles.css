@@ -920,7 +920,7 @@ html {
 
 .card-team {
   background: white;
-  border: 1px solid #E8E8E8;
+  border: 1px solid #f7e8e8;
 }
 .card-team__photo {
   width: 100%;
@@ -970,7 +970,7 @@ html {
 
 .card-reviews {
   background: white;
-  border: 1px solid #E8E8E8;
+  border: 1px solid #f7e8e8;
   padding: 35px 65px 35px 39px;
   border-radius: 5px;
 }
@@ -1015,7 +1015,7 @@ html {
 }
 
 .card-features {
-  border: 1px solid #E8E8E8;
+  border: 1px solid #f7e8e8;
   padding: 35px 62px 35px 39px;
 }
 .card-features__row {

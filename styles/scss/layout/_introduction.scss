@@ -5,7 +5,7 @@
 .introduction {
     padding: 80px 0px;
     background-color: colors.$light-bg-color-2;
-    @media (min-width: 768px) {
+    @include mixins.respond-to(medium) {
         padding: 120px 91px;
     }
     &__title {
@@ -15,7 +15,7 @@
         max-width: 754px;
         margin: 0px auto 40px;
         color: colors.$text-color;
-        @media (min-width: 768px) {
+        @include mixins.respond-to(medium) {
             @include mixins.h1;
         }
     }
@@ -29,7 +29,7 @@
     &__btns {
         max-width: 182px;
         margin: 0px auto;
-        @media (min-width: 768px) {
+        @include mixins.respond-to(medium) {
             display: flex;
             width: 347px;
             max-width: none;

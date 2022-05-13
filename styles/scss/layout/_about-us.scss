@@ -23,7 +23,7 @@
         box-sizing: border-box;
         height: 442px;
         position: relative;
-        @media (min-width: 768px) {
+        @include mixins.respond-to(medium) {
             padding: 0px 83px;
         }
     }

@@ -1,6 +1,8 @@
 @use "../utils/mixins";
 @use "../utils/colors";
 @use "../utils/extends";
+@use "sass:color";
+@use "sass:map";
 
 .reviews {
     background: colors.$light-bg-color-2;
@@ -17,7 +19,7 @@
         color: colors.$second-text-color;
         max-width: 431px;
         margin: 0px auto 60px;
-        @media (min-width: 768px) {
+        @include mixins.respond-to(medium) {
             margin: 0px auto 80px;
         }
     }
@@ -25,21 +27,21 @@
         display: grid;
         grid-template-columns: 1fr;
         row-gap: 30px;
-        @media (min-width: 768px) {
+        @include mixins.respond-to(medium) {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             grid-template-columns: repeat(9, 1fr);
             gap: 30px;
         }
-        @media (min-width: 1024px) {
+        @include mixins.respond-to(large) {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
         }
     }
     &__card {
-        @media (min-width: 768px) {
+        @include mixins.respond-to(medium) {
             flex-basis: 47%;
         }
     }
