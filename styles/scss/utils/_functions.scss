@@ -1,0 +1,4 @@
+@function calcFontSize($a, $b: 14) {
+    $res: round($a/$b*10)/10;
+    @return #{$res}rem;
+}

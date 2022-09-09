@@ -1,0 +1,56 @@
+@use "../utils/mixins";
+@use "../utils/colors";
+@use "../utils/extends";
+
+.introduction {
+    padding: 80px 0px;
+    background-color: colors.$light-bg-color-2;
+    @include mixins.respond-to(medium) {
+        padding: 120px 91px;
+    }
+    &__title {
+        @include mixins.h2;
+        @extend .text-centered;
+        box-sizing: border-box;
+        max-width: 754px;
+        margin: 0px auto 40px;
+        color: colors.$text-color;
+        @include mixins.respond-to(medium) {
+            @include mixins.h1;
+        }
+    }
+    &__text {
+        @include mixins.h4;
+        color: colors.$second-text-color;
+        @extend .text-centered;
+        max-width: 539px;
+        margin: 0px auto 40px;
+    }
+    &__btns {
+        max-width: 182px;
+        margin: 0px auto;
+        @include mixins.respond-to(medium) {
+            display: flex;
+            width: 347px;
+            max-width: none;
+        }
+    }
+    &__btn {
+        margin: 0px auto 25px;
+        @extend .text-centered;
+        width: 182px;
+        @include mixins.btn-text;
+        text-decoration: none;
+        color: colors.$light-text-color;
+        background-color: colors.$secondary-color-3;
+        padding: 10px 35px;
+        border-radius: 35px;
+        display: block;
+        border: 1px solid colors.$secondary-color-3;
+        &_bg-color_none {
+            width: 155px;
+            background: none;
+            color: colors.$secondary-color-3;
+        }
+    }
+}

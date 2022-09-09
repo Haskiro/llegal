@@ -1,0 +1,38 @@
+@use "../utils/mixins";
+@use "../utils/colors";
+@use "../utils/extends";
+
+.features {
+    padding: 75px 0px 117px;
+    @media (min-width: 768px) {
+
+    }
+    &__title {
+        @include mixins.h2;
+        @extend .text-centered;
+        color: colors.$text-color;
+        margin-bottom: 10px;
+    }
+    &__text {
+        @include mixins.paragraph;
+        @extend .text-centered;
+        color: colors.$second-text-color;
+        max-width: 431px;
+        margin: 0px auto 45px;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        @include mixins.respond-to(medium) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        @include mixins.respond-to(large) {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+    }
+    &__card {
+    }
+}

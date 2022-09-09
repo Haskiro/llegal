@@ -1,0 +1,164 @@
+@use "../utils/mixins";
+@use "../utils/colors";
+@use "../utils/extends";
+
+.footer {
+    background: colors.$dark-background-color;
+    padding: 53px 0px 0px;
+    &__body {
+        @include mixins.respond-to(medium) {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+        }
+    }
+    &__socials {
+        @include mixins.respond-to(medium) {
+            grid-column: span 10;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__site-map {
+        @include mixins.respond-to(medium) {
+            grid-column: span 7;
+        }
+    }
+    &__feedback {
+        @include mixins.respond-to(medium) {
+            grid-column: span 3;
+        }
+    }
+    &__copyrigth {
+    }
+}
+.socials-footer {
+    &__logo {
+        margin-bottom: 63px;
+        width: 74px;
+    }
+    &__list {
+        display: flex;
+        margin-bottom: 40px;
+    }
+    &__item {
+        margin-right: 20px;
+        &:nth-last-child(-n + 1) {
+            margin-right: 0px;
+        }
+    }
+    &__link {
+    }
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+.site-map {
+    @include mixins.respond-to(medium) {
+        display: flex;
+        margin-bottom: 70px;
+    }
+    padding: 70px 0px 0px;
+    &__list {
+        margin-bottom: 30px;
+        @include mixins.respond-to(medium) {
+            flex: 1 0 25%;
+        }
+    }
+    &__item {
+        &:nth-last-child(-n + 1) {
+            margin-bottom: 0px;
+        }
+        margin-bottom: 10px;
+        &_heading {
+            @include mixins.h5;
+            color: colors.$light-text-color;
+            margin-bottom: 20px;
+        }
+    }
+    &__link {
+        @include mixins.link;
+        color: colors.$footer-sitemap-color;
+        text-decoration: none;
+    }
+}
+.feedback {
+    @include mixins.respond-to(medium) {
+        margin-top: 70px;
+    }
+    &__title {
+        @include mixins.h5;
+        color: colors.$light-text-color;
+        margin-bottom: 20px;
+    }
+    &__form {
+        position: relative;
+    }
+    &__label {
+        opacity: 0;
+        position: absolute;
+    }
+    &__input {
+        padding: 0px 137px 0px 20px;
+        width: 100%;
+        border: none;
+        height: 58px;
+        border-radius: 5px;
+        background: linear-gradient(to right, white 90%, colors.$secondary-color-3 10%);
+        border: 1px solid colors.$feedback-input-border;
+        outline-color: colors.$secondary-color-3;
+        @media (min-width: 768px) and (max-width: 1024px) {
+            padding: 0px 90px 0px 20px;
+        }
+        &::placeholder {
+            font-size: 1rem;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            line-height: 2rem;
+            letter-spacing: 0.2px;
+            color: colors.$muted-color;
+        }
+    }
+    &__btn {
+        font-size: 1rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        line-height: 2rem;
+        letter-spacing: 0.2px;
+        color: colors.$light-text-color;
+        text-decoration: none;
+        background-color: colors.$secondary-color-3;
+        padding: 13px 0px;
+        display: block;
+        width: 117px;
+        border: 1px solid colors.$secondary-color-3;
+        position: absolute;
+        top: 1px;
+        right: 5px;
+        @media (min-width: 768px) and (max-width: 1024px) {
+            width: 70px;
+        }
+    }
+    &__text {
+        font-size: 0.9rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        line-height: 2rem;
+        letter-spacing: 0.2px;
+        color: colors.$muted-color;
+        margin-bottom: 70px;
+    }
+}
+.copyrigth {
+    width: 100%;
+    padding: 25px 0px;
+    @extend .text-centered;
+    background: colors.$background-gradient-1;
+    @include mixins.respond-to(medium) {
+        text-align: left;
+    }
+    &__text {
+        @include mixins.h6;
+        color: colors.$light-text-color;
+    }
+}

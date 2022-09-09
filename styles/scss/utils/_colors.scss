@@ -1,0 +1,18 @@
+@use "sass:color";
+@use "sass:map";
+
+$primary-color: #000000;
+$secondary-color-3: #000000;
+$secondary-color-4: #295C7A;
+$background-gradient-1: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%);
+$text-color: #252B42;
+$second-text-color: #2b2a2a;
+$light-text-color: #FFFFFF;
+$dark-background-color: #000000;
+$muted-color: #000000;
+$footer-sitemap-color: #ffffff;
+$light-bg-color: #F7F7F7;
+$light-bg-color-2: #FAFAFA;
+$card-border-color: color.adjust(#E8E8E8, $red: 15);
+$feedback-input-border: #E6E6E6;
+$form-input-color: #F9F9F9;

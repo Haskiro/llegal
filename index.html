@@ -4,9 +4,502 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/styles.css">
+    <link rel="stylesheet" href="styles/css/print.css" media="print">
     <title>Llegal</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <a href="#content" class="header__skip-link">Skip to main content</a>
+                <a class="header__link" href="#">
+                    <img src="images/header/logo.svg" alt="Logo" class="header__logo">
+                </a>
+                <div class="header__content">
+                    <nav class="header__nav nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Product</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Pricing</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="header__icons-list icons-list">
+                        <li class="icons-list__item">
+                            <a href="#" class="icons-list__link">
+                                <img src="images/header/search.svg" alt="search" class="icons-list__icon">
+                            </a>
+                        </li>
+                        <li class="icons-list__item">
+                            <a href="#" class="icons-list__link">
+                                <img src="images/header/shopping-cart.svg" alt="shopping cart" class="icons-list__icon">
+                            </a>
+                        </li>
+                        <li class="icons-list__item">
+                            <button class="icons-list__button">
+                                <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="icons-list__burger burger" aria-label="navigation-menu">
+                                    <line x1="0.6" x2="23.4" y1="1" y2="1" stroke-width="2.4" stroke="#737373"/>
+                                    <line x1="6.3" x2="23.4" y1="6.8" y2="6.8" stroke-width="2.4" stroke="#737373"/>
+                                    <line x1="13.4" x2="23.4" y1="12.6" y2="12.6" stroke-width="2.4" stroke="#737373"/>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="introduction">
+            <div class="container">
+                <h1 class="introduction__title">Help to reclaim your life and freedom </h1>
+                <p class="introduction__text">
+                    We know how large objects will act, but things on a small scale just do not act that way.
+                </p>
+                <div class="introduction__btns">
+                    <a href="#" class="introduction__btn">Get Quote Now</a>
+                    <a href="#" class="introduction__btn introduction__btn_bg-color_none">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <section class="features" id="content">
+            <div class="container">
+                <h2 class="features__title">Every Client Matters</h2>
+                <p class="features__text">
+                    Problems trying to resolve the conflict between 
+                    the two major realms of Classical physics: Newtonian mechanics 
+                </p>
+                <div class="features__content">
+                    <!-- (div.features__card.card-features>(.card-features__row>img.card-features__icon+p.card-features__title)+p.card-features__text)*6 -->
+                    <div class="features__card card-features">
+                        <div class="card-features__row">
+                            <img src="images/features/family-law.svg" alt="family law" class="card-features__icon" aria-hidden="true">
+                            <p class="card-features__title">Family Law</p>
+                        </div>
+                        <p class="card-features__text">
+                            the quick fox jumps over the lazy 
+                            dog the quick fox jumps over the 
+                            lazy dog
+                        </p>
+                    </div>
+                    <div class="features__card card-features">
+                        <div class="card-features__row">
+                            <img src="images/features/business-law.svg" alt="business law" class="card-features__icon" aria-hidden="true">
+                            <p class="card-features__title">Business Law</p>
+                        </div>
+                        <p class="card-features__text">
+                            the quick fox jumps over the lazy 
+                            dog the quick fox jumps over the 
+                            lazy dog
+                        </p>
+                    </div>
+                    <div class="features__card card-features">
+                        <div class="card-features__row">
+                            <img src="images/features/trust-estates.svg" alt="trust estates" class="card-features__icon" aria-hidden="true">
+                            <p class="card-features__title">Trust & Estates</p>
+                        </div>
+                        <p class="card-features__text">
+                            the quick fox jumps over the lazy 
+                            dog the quick fox jumps over the 
+                            lazy dog
+                        </p>
+                    </div>
+                    <div class="features__card card-features">
+                        <div class="card-features__row">
+                            <img src="images/features/civil-litigation.svg" alt="civil litigation" class="card-features__icon" aria-hidden="true">
+                            <p class="card-features__title">Civil Litigation</p>
+                        </div>
+                        <p class="card-features__text">
+                            the quick fox jumps over the lazy 
+                            dog the quick fox jumps over the 
+                            lazy dog
+                        </p>
+                    </div>
+                    <div class="features__card card-features">
+                        <div class="card-features__row">
+                            <img src="images/features/trust-estates2.svg" alt="trust estates" class="card-features__icon" aria-hidden="true">
+                            <p class="card-features__title">Trust & Estates</p>
+                        </div>
+                        <p class="card-features__text">
+                            the quick fox jumps over the lazy 
+                            dog the quick fox jumps over the 
+                            lazy dog
+                        </p>
+                    </div>
+                    <div class="features__card card-features">
+                        <div class="card-features__row">
+                            <img src="images/features/family-law2.svg" alt="family law" class="card-features__icon" aria-hidden="true">
+                            <p class="card-features__title">Family Law</p>
+                        </div>
+                        <p class="card-features__text">
+                            the quick fox jumps over the lazy 
+                            dog the quick fox jumps over the 
+                            lazy dog
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-us">
+            <div class="container">
+                <h2 class="about-us__title">
+                    Who We Are
+                </h2>
+                <p class="about-us__text">
+                    Problems trying to resolve 
+                    the conflict between the 
+                    two major realms of Classical 
+                    physics: Newtonian mechanics 
+                </p>
+                <div class="about-us__video">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/about-us/image-lg.jpg">
+                        <img src="images/about-us/image-md.jpg" alt="video" class="about-us__image">
+                    </picture>
+                    <img src="images/about-us/pause-btn.svg" alt="" class="about-us__pause-icon">
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <h2 class="reviews__title">
+                    What Clients Say
+                </h2>
+                <p class="reviews__text">
+                    Problems trying to resolve 
+                    the conflict between the two major 
+                    realms of Classical physics: 
+                    Newtonian mechanics 
+                </p>
+                <div class="reviews__content">
+                    <div class="reviews__card card-reviews">
+                        <div class="card-reviews__stars">
+                            <img src="images/reviews/star-filled.svg" alt="" class="card-reviews__star">
+                            <img src="images/reviews/star-filled.svg" alt="" class="card-reviews__star">
+                            <img src="images/reviews/star-filled.svg" alt="" class="card-reviews__star">
+                            <img src="images/reviews/star-filled.svg" alt="" class="card-reviews__star">
+                            <img src="images/reviews/star-unfilled.svg" alt="" class="card-reviews__star">
+                        </div>
+                        <p class="card-reviews__text">
+                            Slate helps you see how many 
+                            more days you need to work to 
+                            reach your financial goal.
+                        </p>
+                        <div class="card-reviews__author author">
+                            <img
+                                src="images/reviews/ava-50px.jpg" alt="avatar" class="author__photo"
+                                srcset="images/reviews/ava-100px.jpg 2x,
+                                        images/reviews/ava-150px.jpg 3x">
+
+                            <div class="author__text">
+                                <a href="#" class="author__link">
+                                    Regina Miles
+                                </a>
+                                <p class="author__position">
+                                    Designer
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__card card-reviews">
+                        <div class="card-reviews__stars">
+                            <img src="images/reviews/star-filled.svg" alt="" class="card-reviews__star">
+                            <img src="images/reviews/star-filled.svg" alt="" class="card-reviews__star">
+                            <img src="images/reviews/star-filled.svg" alt="" class="card-reviews__star">
+                            <img src="images/reviews/star-filled.svg" alt="" class="card-reviews__star">
+                            <img src="images/reviews/star-unfilled.svg" alt="" class="card-reviews__star">
+                        </div>
+                        <p class="card-reviews__text">
+                            Slate helps you see how many 
+                            more days you need to work to 
+                            reach your financial goal.
+                        </p>
+                        <div class="card-reviews__author author">
+                            <img
+                                src="images/reviews/ava-50px.jpg" alt="avatar" class="author__photo"
+                                srcset="images/reviews/ava-100px.jpg 2x,
+                                        images/reviews/ava-150px.jpg 3x">
+                            <div class="author__text">
+                                <a href="#" class="author__link">
+                                    Regina Miles
+                                </a>
+                                <p class="author__position">
+                                    Designer
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__card card-reviews">
+                        <div class="card-reviews__stars">
+                            <img src="images/reviews/star-filled.svg" alt="" class="card-reviews__star">
+                            <img src="images/reviews/star-filled.svg" alt="" class="card-reviews__star">
+                            <img src="images/reviews/star-filled.svg" alt="" class="card-reviews__star">
+                            <img src="images/reviews/star-filled.svg" alt="" class="card-reviews__star">
+                            <img src="images/reviews/star-unfilled.svg" alt="" class="card-reviews__star">
+                        </div>
+                        <p class="card-reviews__text">
+                            Slate helps you see how many 
+                            more days you need to work to 
+                            reach your financial goal.
+                        </p>
+                        <div class="card-reviews__author author">
+                            <img
+                                src="images/reviews/ava-50px.jpg" alt="avatar" class="author__photo"
+                                srcset="images/reviews/ava-100px.jpg 2x,
+                                        images/reviews/ava-150px.jpg 3x">
+                            <div class="author__text">
+                                <a href="#" class="author__link">
+                                    Regina Miles
+                                </a>
+                                <p class="author__position">
+                                    Designer
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-team">
+            <div class="container">
+                <h2 class="our-team__title">
+                    Meet Our 
+                    Attorneys
+                </h2>
+                <p class="our-team__text">
+                    Problems trying to resolve 
+                    the conflict between the two major 
+                    realms of Classical physics: 
+                    Newtonian mechanics 
+                </p>
+                <div class="our-team__content">
+                    <div class="our-team__card card-team">
+                        <img src="images/our-team/photo1.jpg" alt="Ashley Fletcher photo" class="card-team__photo">
+                        <p class="card-team__name">
+                            Ashley Fletcher
+                        </p>
+                        <p class="card-team__position">
+                            LAYER & CEO
+                        </p>
+                        <div class="card-team__socials socials-team">
+                            <ul class="socials-team__list">
+                                <li class="socials-team__item">
+                                    <a href="#" class="socials-team__link">
+                                        <img src="images/our-team/facebook-icon.svg" alt="facebook icon" class="socials-team__icon">
+                                    </a>
+                                </li>
+                                <li class="socials-team__item">
+                                    <a href="#" class="socials-team__link">
+                                        <img src="images/our-team/instagram-icon.svg" alt="instagram icon" class="socials-team__icon">
+                                    </a>
+                                </li>
+                                <li class="socials-team__item">
+                                    <a href="#" class="socials-team__link">
+                                        <img src="images/our-team/twitter-icon.svg" alt="twitter icon" class="socials-team__icon">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="our-team__card card-team">
+                        <img src="images/our-team/photo2.jpg" alt="Rodney Stratton photo" class="card-team__photo">
+                        <p class="card-team__name">
+                            Rodney Stratton
+                        </p>
+                        <p class="card-team__position">
+                            CEO
+                        </p>
+                        <div class="card-team__socials socials-team">
+                            <ul class="socials-team__list">
+                                <li class="socials-team__item">
+                                    <a href="#" class="socials-team__link">
+                                        <img src="images/our-team/facebook-icon.svg" alt="facebook icon" class="socials-team__icon">
+                                    </a>
+                                </li>
+                                <li class="socials-team__item">
+                                    <a href="#" class="socials-team__link">
+                                        <img src="images/our-team/instagram-icon.svg" alt="instagram icon" class="socials-team__icon">
+                                    </a>
+                                </li>
+                                <li class="socials-team__item">
+                                    <a href="#" class="socials-team__link">
+                                        <img src="images/our-team/twitter-icon.svg" alt="twitter icon" class="socials-team__icon">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="our-team__card card-team">
+                        <img src="images/our-team/photo3.jpg" alt="Avie Beaton photo" class="card-team__photo">
+                        <p class="card-team__name">
+                            Avie Beaton
+                        </p>
+                        <p class="card-team__position">
+                            LAYER CIVIL LAW
+                        </p>
+                        <div class="card-team__socials socials-team">
+                            <ul class="socials-team__list">
+                                <li class="socials-team__item">
+                                    <a href="#" class="socials-team__link">
+                                        <img src="images/our-team/facebook-icon.svg" alt="facebook icon" class="socials-team__icon">
+                                    </a>
+                                </li>
+                                <li class="socials-team__item">
+                                    <a href="#" class="socials-team__link">
+                                        <img src="images/our-team/instagram-icon.svg" alt="instagram icon" class="socials-team__icon">
+                                    </a>
+                                </li>
+                                <li class="socials-team__item">
+                                    <a href="#" class="socials-team__link">
+                                        <img src="images/our-team/twitter-icon.svg" alt="twitter icon" class="socials-team__icon">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact__request request">
+                <div class="container">
+                    <p class="request__subtitle">
+                        Contact Us
+                    </p>
+                    <h2 class="request__title">
+                        Request A 
+                        Free 
+                        Consultation
+                    </h2>
+                    <form class="request__form form" method="POST">
+                        <label for="name" class="form__label">Full Name</label>
+                        <input type="text" name="name" id="name" class="form__input" placeholder="Full Name" aria-labelledby="name">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" name="email" id="email" class="form__input" placeholder="example@gmail.com" aria-labelledby="email">
+                        <div class="form__select-block">
+                            <select name="select" id="select" class="form__select" aria-label="Select">
+                                <option value="Please Select" selected disabled>Please Select</option>
+                            </select>
+                        </div>
+                        <div class="form__select-block">
+                            <select name="selectTime" id="time" class="form__select" aria-label="Select Time">
+                                <option value="4:00" selected>4:00 Available</option>
+                            </select>
+                        </div>
+                        <label for="message" class="form__label">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" class="form__textarea" placeholder="Message" aria-labelledby="message"></textarea>
+                        <button class="form__button">
+                            Book Appointment
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <div class="contact__consulting consulting">
+                    <div class="consulting__content">
+                        <p class="consulting__title">
+                            Consulting Agency 
+                            For Your Business
+                        </p>
+                        <p class="consulting__text">
+                            the quick fox jumps over 
+                            the lazy dog
+                        </p>
+                    </div>
+                    <a href="#" class="consulting__link">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__body">
+                <div class="footer__socials socials-footer">
+                    <img src="images/footer/logo.svg" alt="" class="socials-footer__logo">
+                    <ul class="socials-footer__list">
+                        <li class="socials-footer__item">
+                            <a href="#" class="socials-footer__link">
+                                <img src="images/footer/facebook.svg" alt="facebook" class="socials-footer__icon">
+                            </a>
+                        </li>
+                        <li class="socials-footer__item">
+                            <a href="#" class="socials-footer__link">
+                                <img src="images/footer/instagram.svg" alt="instagram" class="socials-footer__icon">
+                            </a>
+                        </li>
+                        <li class="socials-footer__item">
+                            <a href="#" class="socials-footer__link">
+                                <img src="images/footer/twitter.svg" alt="twitter" class="socials-footer__icon">
+                            </a>
+                        </li>
+                        <li class="socials-footer__item">
+                            <a href="#" class="socials-footer__link">
+                                <img src="images/footer/youtube.svg" alt="youtube" class="socials-footer__icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__site-map site-map">
+                    <ul class="site-map__list">
+                        <li class="site-map__item site-map__item_heading">Company Info</li>
+                        <li class="site-map__item"><a href="#" class="site-map__link">About Us</a></li>
+                        <li class="site-map__item"><a href="#" class="site-map__link">Carrier</a></li>
+                        <li class="site-map__item"><a href="#" class="site-map__link">We are hiring</a></li>
+                        <li class="site-map__item"><a href="#" class="site-map__link">Blog</a></li>
+                    </ul>
+                    <ul class="site-map__list">
+                        <li class="site-map__item site-map__item_heading">Legal</li>
+                        <li class="site-map__item"><a href="#" class="site-map__link">About Us</a></li>
+                        <li class="site-map__item"><a href="#" class="site-map__link">Carrier</a></li>
+                        <li class="site-map__item"><a href="#" class="site-map__link">We are hiring</a></li>
+                        <li class="site-map__item"><a href="#" class="site-map__link">Blog</a></li>
+                    </ul>
+                    <ul class="site-map__list">
+                        <li class="site-map__item site-map__item_heading">Features</li>
+                        <li class="site-map__item"><a href="#" class="site-map__link">Business Marketing</a></li>
+                        <li class="site-map__item"><a href="#" class="site-map__link">User Analytic</a></li>
+                        <li class="site-map__item"><a href="#" class="site-map__link">Live Chat</a></li>
+                        <li class="site-map__item"><a href="#" class="site-map__link">Unlimited Support</a></li>
+                    </ul>
+                    <ul class="site-map__list">
+                        <li class="site-map__item site-map__item_heading">Resources</li>
+                        <li class="site-map__item"><a href="#" class="site-map__link">IOS & Android</a></li>
+                        <li class="site-map__item"><a href="#" class="site-map__link">Watch a Demo</a></li>
+                        <li class="site-map__item"><a href="#" class="site-map__link">Customers</a></li>
+                        <li class="site-map__item"><a href="#" class="site-map__link">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer__feedback feedback">
+                    <p class="feedback__title">
+                        Get In Touch
+                    </p>
+                    <form class="feedback__form" method="POST">
+                        <label for="feedback-email" class="feedback__label">Your Email</label>
+                        <input type="email" id="feedback-email" class="feedback__input" placeholder="Your Email">
+                        <button class="feedback__btn">Subscribe</button>
+                    </form>
+                    <p class="feedback__text">
+                        Lorem impsum dolor amit
+                    </p>
+                </div>
+            </div>
+        </div>  
+        <div class="footer__copyrigth copyrigth">
+            <p class="copyrigth__text container">
+                Made With Love By 
+                Figmaland All Right Reserved 
+            </p>
+        </div>
+    </footer>
+    <script src="sritpts/scripts.js"></script>
 </body>
 </html>

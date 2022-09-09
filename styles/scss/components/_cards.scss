@@ -1,0 +1,113 @@
+@use "../utils/mixins";
+@use "../utils/colors";
+@use "../utils/extends";
+
+.card-team {
+    background: white;
+    border: 1px solid colors.$card-border-color;
+    &__photo {
+        width: 100%;
+        height: 231px;
+        object-fit: cover;
+        margin-bottom: 30px;
+    }
+    &__name {
+        @extend .text-centered;
+        margin-bottom: 5px;
+        @include mixins.h5;
+        color: colors.$text-color;
+    }
+    &__position {
+        @extend .text-centered;
+        @include mixins.h6;
+        color: colors.$second-text-color;
+        margin-bottom: 10px;
+    }
+    &__socials {
+        margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+.socials-team {
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin-right: 10px;
+        &:nth-last-child(-n + 1) {
+            margin-right: 0px;
+        }
+    }
+    &__link {
+    }
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.card-reviews {
+    background: white;
+    border: 1px solid colors.$card-border-color;
+    padding: 35px 65px 35px 39px;
+    border-radius: 5px;
+    &__stars {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    &__star {
+    }
+    &__text {
+        @include mixins.h6;
+        color: colors.$second-text-color;
+        margin-bottom: 20px;
+
+    }
+    &__author {
+    }
+}
+.author {
+    display: flex;
+    &__photo {
+        margin-right: 15px;
+        width: 50px;
+        height: 50px;
+    }
+    &__text {
+    }
+    &__link {
+        @include mixins.link;
+        color: colors.$primary-color;
+        text-decoration: none;
+    }
+    &__position {
+        @include mixins.h6;
+        color: colors.$text-color;
+    }
+}
+
+.card-features {
+    border: 1px solid colors.$card-border-color;
+    padding: 35px 62px 35px 39px;
+    &__row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    &__icon {
+        width: 48px;
+        height: 48px;
+        margin-right: 15px;
+    }
+    &__title {
+        color: colors.$text-color;
+        @include mixins.h5;
+    }
+    &__text {
+        color: colors.$second-text-color;
+        @include mixins.paragraph;
+    }
+}

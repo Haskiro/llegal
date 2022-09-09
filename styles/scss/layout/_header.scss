@@ -1,0 +1,138 @@
+@use "../utils/colors";
+@use "../utils/mixins";
+@use "../utils/extends";
+@use "sass:color";
+@use "sass:map";
+
+.header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: colors.$light-bg-color;
+    z-index: 10;
+    position: relative;
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__skip-link {
+        position: absolute;
+        top: -100%;
+        &:focus {
+            top: 80px;
+        }
+    }
+    &__link {
+    }
+    &__logo {
+        width: 74px;
+        z-index: 10;
+        
+    }
+    &__content {
+        @media (min-width: 768px) {
+            display: flex;
+        }
+
+    }
+    &__nav {
+        position: absolute;
+        transition: 0.3s linear;
+        left: 0;
+        top: -532px;
+        visibility: hidden;
+        @media (min-width: 768px) {
+            position: relative;
+            visibility: visible;
+            top: auto;
+            left: auto;
+        }
+        &.active {
+            top: 0;
+            visibility: visible;
+        }
+    }
+    &__icons-list {
+        z-index: 100;
+    }
+}
+
+.nav {
+    padding: 104px 0px 100px;
+    width: 100vw;
+    background-color: colors.$light-bg-color;
+    z-index: 9;
+    height: 532px;
+    @media (min-width: 768px) {
+        background: none;
+        height: auto;
+        width: auto;
+        padding: 0px;
+    }
+    &__list {
+        max-width: 120px;
+        margin: 60px auto 0px;
+        @media (min-width: 768px) {
+            margin: 0px;
+            max-width: none;
+            display: flex;
+        }
+    }
+    &__item {
+        text-align: center;
+        margin-bottom: 30px;
+        &:nth-last-child(-n + 1) {
+            margin-bottom: 0px;
+            @media (min-width: 768px) {
+                margin-right: 42px;
+            }
+        }
+        @media (min-width: 768px) {
+            margin: 0px 30px 0px 0px;
+        }
+    }
+    &__link {
+        color: colors.$second-text-color;
+        text-decoration: none;
+        @include mixins.mobile-menu;
+        @include mixins.respond-to(medium) {
+            @include mixins.link;
+        }
+    }
+}
+
+.icons-list {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    &__item {
+        margin-right: 24px;
+        &:nth-last-child(-n + 1) {
+            margin-right: 0px;
+        }
+    }
+    &__link {
+    }
+    &__icon {
+        width: 24px;
+        height: 24px;
+        @media (min-width: 768px) {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &__button {
+        background: none;
+        border: none;
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+    &__burger {
+    }
+}
+.burger {
+    @media (min-width: 768px) {
+        display: none;
+    }
+}

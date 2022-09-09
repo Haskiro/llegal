@@ -1,0 +1,43 @@
+@use "../utils/mixins";
+@use "../utils/colors";
+@use "../utils/extends";
+
+.our-team {
+    padding: 75px 0px 138px;
+    &__title {
+        @include mixins.h2;
+        @extend .text-centered;
+        color: colors.$text-color;
+        margin-bottom: 10px;
+    }
+    &__card {
+        @include mixins.respond-to(medium) {
+            flex-basis: 47%;
+        }
+    }
+    &__text {
+        @include mixins.paragraph;
+        @extend .text-centered;
+        color: colors.$second-text-color;
+        max-width: 431px;
+        margin: 0px auto 45px;
+        @include mixins.respond-to(medium) {
+            margin: 0px auto 80px;
+        }
+    }
+    &__content {
+        @include mixins.respond-to(medium) {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            grid-template-columns: repeat(9, 1fr);
+            gap: 30px;
+        }
+        @include mixins.respond-to(large) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+    }
+}
+

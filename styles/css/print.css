@@ -1,0 +1,148 @@
+@media print {
+  *,
+*:before,
+*:after,
+*:first-letter,
+p:first-line,
+div:first-line,
+blockquote:first-line,
+li:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+a:visited {
+    text-decoration: underline !important;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  @page {
+    size: A4;
+    margin: 1cm;
+  }
+  html {
+    font-size: 10pt;
+  }
+
+  .header__content,
+.footer__socials,
+.footer__site-map,
+.footer__feedback,
+.contact__request,
+.about-us {
+    display: none;
+  }
+
+  .introduction__text, .features__title, .about-us__title, .our-team__title {
+    page-break-after: avoid;
+  }
+
+  .card-features, .about-us__video, .card-reviews, .card-team {
+    page-break-inside: avoid;
+  }
+
+  .header {
+    padding: 0 0 5mm 0;
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+}
+@media print and (min-width: 768px) {
+  .introduction {
+    padding: 0;
+  }
+}
+@media print {
+  .introduction__title {
+    margin: 0 auto 5mm;
+  }
+}
+@media print {
+  .introduction__text {
+    margin: 0 auto 5mm;
+  }
+}
+@media print {
+  .introduction__btn {
+    margin: 0 auto 0;
+    width: auto;
+    display: inline-block;
+  }
+}
+@media print {
+  .introduction__btns {
+    max-width: 10cm;
+  }
+}
+@media print and (min-width: 768px) {
+  .introduction__btns {
+    max-width: 10cm;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media print {
+  .features {
+    padding: 2cm 0 0;
+  }
+  .features__text {
+    margin: 0 auto 5mm;
+  }
+  .features__content {
+    row-gap: 4mm;
+  }
+}
+@media print {
+  .about-us {
+    page-break-before: always;
+    padding: 2cm 0 0;
+  }
+  .about-us__text {
+    margin: 0 auto 5mm;
+  }
+}
+@media print {
+  .reviews {
+    page-break-before: always;
+    padding: 2cm 0 0;
+  }
+  .reviews__text {
+    margin: 0 auto 5mm;
+  }
+  .reviews__content {
+    row-gap: 4mm;
+  }
+}
+@media print {
+  .our-team {
+    padding: 2cm 0 0;
+  }
+  .our-team__text {
+    margin: 0 auto 5mm;
+  }
+}
+@media print {
+  .contact__consulting {
+    padding: 5mm 0;
+  }
+}
+@media print {
+  .footer {
+    padding: 0;
+  }
+}/*# sourceMappingURL=print.css.map */
